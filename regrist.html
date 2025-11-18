@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>WisataKu - Login</title>
-  <link rel="stylesheet" href="login.css" />
+  <link rel="stylesheet" href="regrist.css" />
 </head>
 <body>
   <div class="container">
@@ -19,18 +19,21 @@
 
     <div class="right">
       <div class="card">
-        <h2>Selamat Datang</h2>
-        <p>Masuk untuk melanjutkan pemesanan tiket wisata</p>
+        <h2>Daftar Akun</h2>
+        <p>Buat akun untuk melanjutkan pemesanan tiket wisata</p>
 
-        <form action="home.html" method="GET">
-          <label>Username </label>
+        <form action="index.html" method="GET">
+            <label>Username</label>
+            <input type="text" placeholder="" required />
+            
+          <label>Email </label>
           <input type="text" placeholder="" required />
 
           <label>Password</label>
           <input type="password" placeholder="" required />
 
-          <button type="submit">Masuk</button>
-          <p class="register">Belum punya akun? <a href="regrist.html">Daftar</a></p>
+          <button type="submit">Daftar</button>
+          <p class="register">Sudah punya akun?  <a href="index.html">Masuk</a></p>
         </form>
       </div>
     </div>
