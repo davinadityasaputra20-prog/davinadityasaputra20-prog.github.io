@@ -3,37 +3,153 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>WisataKu - Login</title>
-  <link rel="stylesheet" href="login.css" />
+  <title>WisataKu - Jelajahi Keindahan Malang Raya</title>
+  <link rel="stylesheet" href="landing.css" />
 </head>
-<body>
-  <div class="container">
-    <div class="left">
-      <div class="logo">
-        <div class="wave"></div>
-        <img src="logo.png" alt="Logo WisataKu" />
-        <h1><span class=>Wisata</span>Ku</h1>
-        <p>Jelajahi keindahan Malang Raya – Gunung, pantai selatan, dan budaya lokal.</p>
+<body> 
+  <header class="navbar">
+    <div class="container">
+      <h1 class="logo">WisataKu</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="login.html">Favorite</a></li>
+          <li><a href="#">Tentang Kami</a></li>
+        </ul>
+      </nav>
+      <!-- Auth Buttons -->
+      <div class="auth-buttons">
+        <a href="login.html" class="btn-masuk">Masuk</a>
+        <a href="regrist.html" class="btn-daftar">Daftar</a>
       </div>
     </div>
+  </header>
 
-    <div class="right">
-      <div class="card">
-        <h2>Selamat Datang</h2>
-        <p>Masuk untuk melanjutkan pemesanan tiket wisata</p>
-        <form>
-          <label>Username</label>
-          <input type="text" placeholder="" required />
-            
-          <label>Password</label>
-          <input type="password" placeholder="" required />
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Jelajahi Keindahan <br> <span>Malang Raya</span></h2>
+      <p>Temukan berbagai destinasi wisata menarik di area Malang dan sekitarnya</p>
+      <a href="login.html" class="button">Pesan Tiket Sekarang</a>
+    </div>
+  </section>
 
-          <p class="lupa"> <a href="#">Lupa Password ?</p>
-          <a href="home.html" class="btn-submit">Masuk</a>
-          <p class="register">Belum punya akun?  <a href="regrist.html">Daftar</a></p>
-        </form>
+  <!-- Search -->
+  <section class="search-section">
+    <div class="container">
+      <input type="text" placeholder="Cari Destinasi Wisata..." />
+      <button class="btn">Cari</button>
+    </div>
+  </section>
+
+  <!-- Kategori Wisata -->
+  <section class="kategori">
+    <div class="container">
+      <h2>Kategori Wisata</h2>
+      <div class="kategori-grid">
+        <div class="card">
+          <a href="#"><img src="Wisata Alam.png" alt="Wisata Alam"></a>
+          <h3>Wisata Alam</h3>
+          <p>Menikmati pesona alam indah di area Malang Raya.</p>
+        </div>
+        <div class="card">
+          <a href="#"><img src="Wisata Buatan.png" alt="Wisata Buatan"></a>
+          <h3>Wisata Buatan</h3>
+          <p>Menikmati wahana buatan modern dan beragam hiburan keluarga.</p>
+        </div>
+        <div class="card">
+          <a href="#"><img src="Wisata Edukasi.png" alt="Wisata Edukasi"></a>
+          <h3>Wisata Edukasi</h3>
+          <p>Wisata sambil belajar di berbagai lokasi menarik di Malang.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Destinasi Populer -->
+  <section class="populer">
+    <div class="container">
+      <h2>Destinasi Populer</h2>
+      <div class="populer-grid">
+        <div class="card">
+          <a href=""><img src="Bromo.png" alt="Gunung Bromo"></a>
+          <h3>Gunung Bromo</h3>
+          <p>Destinasi wisata alam paling terkenal di Jawa Timur.</p>
+        </div>
+        <div class="card">
+          <a href=""><img src="Kondang.png" alt="Pantai Balekambang"></a>
+          <h3>Pantai Balekambang</h3>
+          <p>Pantai indah dengan suasana tenang dan pemandangan menakjubkan.</p>
+        </div>
+          <div class="card">
+            <a href=""><img src="Tumpak.png" alt="Tumpak Sewu"></a>
+          <h3>Tumpak Sewu</h3>
+          <p>Air terjun megah yang menjadi ikon wisata Malang Selatan.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimoni -->
+  <section class="testimoni">
+    <div class="container">
+      <h2>Apa Kata Mereka?</h2>
+      <div class="testi-grid">
+        <div class="testi">
+          <p>"Pengalaman berwisata di Malang sangat berkesan! Banyak tempat yang indah."</p>
+          <span>- Anjani, Jakarta</span>
+        </div>
+        <div class="testi">
+          <p>"Tempat wisatanya sangat lengkap dan mudah diakses dengan aplikasi ini."</p>
+          <span>- Bima, Surabaya</span>
+        </div>
+        <div class="testi">
+          <p>"Website-nya membantu sekali untuk merencanakan liburan keluarga kami."</p>
+          <span>- Nita, Sidoarjo</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tentang Kami -->
+  <section class="about">
+    <div class="container">
+      <h2>Tentang Kami</h2>
+      <p>WisataKu adalah platform pemesanan tiket wisata Malang Raya. Kami berkomitmen untuk memberikan kemudahan dalam menemukan dan memesan destinasi wisata terbaik di Malang.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+  <div class="footer-container">
+    <div class="footer-box">
+      <h3>Navigasi</h3>
+      <ul>
+        <li><a href="#">Beranda</a></li>
+        <li><a href="#">Tentang Kami</a></li>
+        <li><a href="#">Layanan</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-box">
+      <h3>Kontak</h3>
+      <ul>
+        <li>Email: davinadityasaputra20@gmai.com</li>
+        <li>Telp: +62 857 9287 4948</li>
+      </ul>
+    </div>
+
+    <div class="footer-box">
+      <h3>Ikuti Kami</h3>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/dpinnn20?igsh=aHQ5NnYwbnFxNnI4"><img src="Instagram.png" alt="Instagram"></a>
+        <a href="#"><img src="Facebook.png" alt="Facebook"></a>
+        <a href="#"><img src="Twitter.png" alt="Twitter"></a>
       </div>
     </div>
   </div>
-</body>
+
+  <p class="footer-bottom">&copy; 2025 WisataKu. All rights reserved.</p>
+</footer>
+</body> 
 </html>
